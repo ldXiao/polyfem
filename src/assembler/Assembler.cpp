@@ -8,7 +8,8 @@
 #include <polyfem/HookeLinearElasticity.hpp>
 #include <polyfem/SaintVenantElasticity.hpp>
 #include <polyfem/NeoHookeanElasticity.hpp>
-// #include <polyfem/OgdenElasticity.hpp>
+//#include <polyfem/OgdenElasticity.hpp>
+#include "../../../../../src/SturmLiouville.hpp"
 
 #include <polyfem/Stokes.hpp>
 #include <polyfem/IncompressibleLinElast.hpp>
@@ -638,6 +639,7 @@ namespace polyfem
 	//template instantiation
 	template class Assembler<Laplacian>;
 	template class Assembler<Helmholtz>;
+	template class Assembler<SturmLiouville>;
 
 	template class Assembler<BilaplacianMain>;
 	template class MixedAssembler<BilaplacianMixed>;
